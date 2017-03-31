@@ -1,0 +1,1 @@
+package com.kk.rainbow.core.ceptor.self;import java.lang.reflect.Method;public abstract interface ICeptorHandler{  public abstract Object beforeProcess(Object paramObject, Method paramMethod, Object[] paramArrayOfObject);  public abstract Object afterProcess(Object paramObject1, Object paramObject2, Method paramMethod, Object[] paramArrayOfObject);}

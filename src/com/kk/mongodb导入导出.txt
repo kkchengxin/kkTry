@@ -1,0 +1,30 @@
+mongodb安装配置：
+E:\mongodb\mongodb\bin\mongod.exe  --logpath=E:\mongodb\logs\mongodb.log --install
+E:\mongodb\mongodb\bin\mongod.exe --dbpath=E:\mongodb\data\db --logpath=E:\mongodb\logs\mongodb.log --install
+
+--config E:\mongodb\mongo.config
+all output going to: E:\mongodb\log\mongodb.log
+E:\mongodb\mongodb\bin>mongod.exe --config E:\mongodb\mongo.config
+E:\mongodb\mongodb\bin\mongod.exe --config E:\mongodb\mongo.config --install
+ 
+ 
+ 导入导出：
+ ./mongoexport  -h 192.168.100.150:27788 -d g_ostar -c os_system -o d:\\os_system.dat
+ 
+ ./mongoexport  -h 192.168.100.150:27788 -d g_ostar -c os_system --csv -f categorys,eventTags,userTags -o d:\\os_system.dat
+ --f :需要导出的字段
+ 
+ ./mongoimport  -h 192.168.100.150:27788 -d test -c os_system d:\\os_system.dat
+ 
+ 
+ ./mongoimport -h 192.168.100.150:27788 -d test -c os_system --type csv --headerline --file d:\\os_system.dat
+ 参数说明：
+-type:指明要导入的文件格式
+-headerline:指明第一行是列名，不需要导入
+-file：指明要导入的文件
+
+
+备份：
+./mongodump -h 192.168.100.150:27788 -d g_ostar -o d:\dump
+
+./mongorestore -h 192.168.100.150:27788 -d g_ostar d:\dump\g_ostar

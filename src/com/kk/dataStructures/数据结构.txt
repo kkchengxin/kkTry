@@ -1,0 +1,4 @@
+
+参考：http://www.cnblogs.com/skywang12345/p/3603935.html
+
+二叉树的常见问题及其解决程序  :http://blog.csdn.net/randyjiawenjie/article/details/6772145
