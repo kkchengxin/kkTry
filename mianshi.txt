@@ -1,0 +1,26 @@
+1 .spring事务的实现？
+        代理模式；类代理和接口代理，spring自动生成代理类
+
+2 .设计模式：生产-消费模式？装饰模式和代理模式的区别？
+
+3. 分布式集群session或者cookie的存储，过期？
+
+4. zookeeper里面的几种算法
+
+5. jvm优化
+
+6. socket的几种状态，三次握手？
+
+7. spring几大模块
+
+8. hashMap数据结构及memcache如何保证存取高速?
+
+9. netty连接是如何管理？每秒能承载多少个并发连接数？
+
+10. 分布式同步锁怎么实现？多线程并发编程？线程池执行效率？ConcurrentHashMap中的size是否准确？
+
+11. 多jvm怎么实现同步？
+
+数据库方面：
+1. mysql执行计划
+2. oracle的几种函数 如decode
